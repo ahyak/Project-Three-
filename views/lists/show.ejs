@@ -1,5 +1,6 @@
 <div >
 <h3><%= list.title%></h3>
+<h6>Created by:<%= list.user.local.firstname%></h6>
 <%= list.location.title %> | <%= list.type%> | <%= list.weather%>
 <%if(currentUser.id ==list.user) { %>
 </div>

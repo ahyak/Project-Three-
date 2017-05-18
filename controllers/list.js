@@ -11,7 +11,7 @@ module.exports = {
   },
   show: (req, res) => {
     List.findById(req.params.id)
-    .populate('location')
+    .populate('location user')
     .exec((err,list) =>{
     res.render('lists/show', {list})
     })
